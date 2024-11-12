@@ -69,14 +69,23 @@ body::after {
     font-weight: 300;
 }
 
+.game-controls-hidden {
+    display: none;
+}
+
 /* GAME ITSELF */
 
 .game-itself {
+    display: none;
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
+}
+
+.game-itself-active {
+    display: unset;
 }
 
 /* GAME ITSELF POINTS */
@@ -88,6 +97,7 @@ body::after {
     transform: translateX(-50%);
     display: flex;
     column-gap: 100px;
+    pointer-events: none;
 }
 
 .game-itself-score,
