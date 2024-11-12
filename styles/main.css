@@ -25,8 +25,8 @@ body::after {
     left: 0;
     width: 100%;
     height: 100%;
-    background: radial-gradient(circle at 50% 50%, transparent, rgba(0, 0, 0, 0.2));
-    z-index: 1;
+    background: radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 0.073), rgba(0, 0, 0, 0.2));
+    z-index: -1;
 }
 
 /* GAME CONTAINER */
@@ -34,7 +34,8 @@ body::after {
 .game {
     width: 100%;
     min-height: 100vh;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
     position: relative;
 }
 
@@ -57,13 +58,34 @@ body::after {
 .game-button {
     padding: 5px 25px;
     font-size: 2rem;
-    border-radius: 2rem;
+    border-radius: 0.5rem;
     border: 0;
     color: white;
-    background-color: rgb(255, 119, 0);
+    background-color: rgb(255, 85, 0);
     border-top: 1px solid rgba(255,255,255,0.05);
     box-shadow: 0 2px 0 black;
     cursor: pointer;
     text-transform: uppercase;
     font-weight: 300;
+}
+
+/* GAME ITSELF */
+
+.game-itself {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+/* GAME ITSELF POINTS */
+
+.game-itself-points-container {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    column-gap: 100px;
 }
