@@ -67,6 +67,12 @@ body::after {
     cursor: pointer;
     text-transform: uppercase;
     font-weight: 300;
+    transition: transform 100ms, box-shadow 100ms;
+}
+
+.game-button:active {
+    transform: translateY(2px);
+    box-shadow: 0 0 0 black;
 }
 
 .game-controls-hidden {

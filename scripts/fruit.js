@@ -1,0 +1,1 @@
+const fruitsImages = ["../assets/Fruits/fruit1.png","../assets/Fruits/fruit2.png","../assets/Fruits/fruit3.png","../assets/Fruits/fruit4.png", "../assets/Fruits/fruit5.png", "../assets/Fruits/fruit6.png", "../assets/Fruits/fruit7.png"];
