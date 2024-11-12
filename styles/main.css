@@ -89,3 +89,13 @@ body::after {
     display: flex;
     column-gap: 100px;
 }
+
+.game-itself-score,
+.game-itself-missed {
+    color: white;
+    background-color: rgb(255, 85, 0);
+    padding: 5px 15px;
+    border-radius: 0.5rem;
+    border-top: 1px solid rgba(255,255,255,0.5);
+    box-shadow: 0 1px 0 black;
+}
