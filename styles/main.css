@@ -82,7 +82,7 @@ body::after {
 /* GAME ITSELF */
 
 .game-itself {
-    /* display: none; */
+    display: none;
     position: absolute;
     width: 100%;
     height: 100%;

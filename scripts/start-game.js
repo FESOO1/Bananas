@@ -6,18 +6,13 @@ let gameIsStarted = false;
 
 // START THE GAME FUNCTION
 
-/* function startGame() {
+function startGame() {
     gameIsStarted = true;
 
     startTheGameButton.textContent = 'Restart';
     startMenuControls.classList.add('game-controls-hidden');
     gameItselfContainer.classList.add('game-itself-active');
 };
-
-// START THE GAME BUTTON
-
-startTheGameButton.addEventListener('click', startGame); */
-
 
 function randomFruits() {
     for (let i = 0; i < 7; i++) {
@@ -30,3 +25,10 @@ function randomFruits() {
         gameItselfContainer.appendChild(fruitItself);
     };
 };
+
+// START THE GAME BUTTON
+
+startTheGameButton.addEventListener('click', () => {
+    startGame();
+    randomFruits();
+});
