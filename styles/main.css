@@ -9,6 +9,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: var(--f-all);
+    user-select: none;
 }
 
 body {
@@ -120,24 +121,30 @@ body::after {
 /* GAME ITSELF IMAGE */
 
 .game-itself-image {
-    width: 40px;
-    height: 40px;
+    width: 80px;
+    height: 80px;
     position: absolute;
-    top: 0;
+    top: -250px;
     left: 0;
     z-index: 999;
+    transition: scale 300ms;
 }
 
 .game-itself-image-dropping {
-    animation: 2s infinite fruit-image-dropping;
+    animation: 15s infinite fruit-image-dropping;
 }
 
 @keyframes fruit-image-dropping {
-    to{top: 100%;}
+    to{top: calc(100% + 100px);}
+}
+
+.game-itself-image:active {
+    scale: 0.5;
 }
 
 .game-itself-image-itself {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    user-select: none;
 }
