@@ -23,6 +23,12 @@ function randomFruits() {
         `;
 
         gameItselfContainer.appendChild(fruitItself);
+
+        // 
+        fruitItself.classList.add('game-itself-image-dropping');
+
+        // RANDOM DROPPING
+        /* Math.floor(Math.random() * ()) */
     };
 };
 
