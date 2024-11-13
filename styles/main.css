@@ -124,7 +124,7 @@ body::after {
     width: 80px;
     height: 80px;
     position: absolute;
-    top: -250px;
+    top: -300px;
     left: 0;
     z-index: 999;
     transition: scale 300ms;
@@ -135,7 +135,7 @@ body::after {
 }
 
 @keyframes fruit-image-dropping {
-    to{top: calc(100% + 100px);}
+    to{top: 100%;}
 }
 
 .game-itself-image:active {
